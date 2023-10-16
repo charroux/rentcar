@@ -5,6 +5,7 @@ public class Car {
 	private String plateNumber;
 	private String brand;
 	private int price;
+	private boolean rented;
 	
 	public Car() {
 		super();
@@ -16,7 +17,15 @@ public class Car {
 		this.brand = brand;
 		this.price = price;
 	}
-	
+
+	public boolean isRented() {
+		return rented;
+	}
+
+	public void setRented(boolean rented) {
+		this.rented = rented;
+	}
+
 	public String getPlateNumber() {
 		return plateNumber;
 	}

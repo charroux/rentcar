@@ -48,12 +48,20 @@ public class CarRentalService {
 		System.out.println(plaque);
 		System.out.println(rented);
 		System.out.println(dates);
+
 		// parcourir le tablea à la recherche d'une voiture de plaque plaque
 		// si voiture trouvé
 		//		si rented = true => louer
 		//		sinon ramener
 		// si voiture non trouvé
 		// 	envoyer HttsStattus NOT-FOUND
+
+		for(Car car: cars){
+			if(car.getPlateNumber().equals(plaque)){
+				car.setRented(rented);
+				return;
+			}
+		}
 		if(rented == false){
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Foo Not Found");
 		}
