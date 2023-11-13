@@ -31,6 +31,11 @@ public class CarRentalService {
 		cars.add(car);
 	}
 
+	/**
+	 * http://localhost:8080/cars/11AA22
+	 * @param plateNumber
+	 * @return
+	 */
 	@GetMapping("/cars/{plateNumber}")
 	public Car getCar(@PathVariable(value = "plateNumber") String plateNumber){
 		for(Car car: cars){
@@ -41,6 +46,12 @@ public class CarRentalService {
 		return null;
 	}
 
+	/**
+	 * http://localhost:8080/cars/11AA22?rent=true
+	 * @param plaque
+	 * @param rented
+	 * @param dates => dans le corps de la requête
+	 */
 	@PutMapping(value = "/cars/{plateNumber}")
 	public void rent(@PathVariable("plateNumber") String plaque,
 					 @RequestParam(value="rent", required = true)boolean rented,
