@@ -10,13 +10,13 @@ Under Intellij : open
 
 ## Launching
 
-Launch the main program: https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalApplication.java
+Launch the main program: https://github.com/charroux/rentcar/blob/main/src/main/java/com/example/CarRental/CarRentalApplication.java
 
 Open a web browser to test the http get request: http://localhost:8080/cars
 
 ## The Web Service
 
-https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalService.java
+https://github.com/charroux/rentcar/blob/main/src/main/java/com/example/CarRental/CarRentalService.java
 
 # Test with curl
 
@@ -38,13 +38,14 @@ curl -X PUT -H 'Content-Type: application/json' -i 'http://localhost:8080/cars/1
 
 # Java Rest client
 
-Launch the main program: https://github.com/charroux/CarService/blob/master/src/main/java/com/example/CarRental/CarRentalClient.java
+Launch the main program: https://github.com/charroux/rentcar/blob/main/src/main/java/com/example/CarRental/CarRentalClient.java
 
 # Javascript client
 
 Open a web browser to test the Javascript program: http://localhost:8080/static/index.html
 
-The web part configuration: https://github.com/charroux/CarService/tree/master/src/main/webapp/WEB-INF
+The web part configuration: https://github.com/charroux/rentcar/tree/main/src/main/webapp/WEB-INF
 
-The html part: https://github.com/charroux/CarService/tree/master/src/main/webapp/static
+The html part: https://github.com/charroux/rentcar/tree/main/src/main/webapp/static
+
 
